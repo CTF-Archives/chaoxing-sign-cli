@@ -58,7 +58,7 @@ jobs:
         uses: docker/metadata-action@v4.0.1
         with:
           images: |
-            cxorz/chaoxingsigncli
+            ${{ secrets.DOCKER_USERNAME }}/chaoxingsigncli
             ghcr.io/${{ github.repository }}
           tags: |
             type=raw,value=latest
